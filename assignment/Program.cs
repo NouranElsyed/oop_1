@@ -11,8 +11,11 @@ namespace assignment
 
     public enum session
     {
-
         Spring, Summer, Autumn, Winter
+    }
+    [Flags]
+    public enum permissions { 
+    Delete =1 , Excute = 2 , Read =4 , Write = 8
     }
     internal class Program
     {
@@ -62,6 +65,32 @@ namespace assignment
             #endregion
 
             #region Q3
+            //permissions YourPermission = (permissions)7;
+            //Console.WriteLine("the permissions you have:");
+            //Console.WriteLine(YourPermission);
+            //Console.WriteLine("change if you have permission to delete romve it or add the delete permission if it is not existd."); 
+            //YourPermission = YourPermission ^ permissions.Delete;
+            //Console.WriteLine(YourPermission);
+
+            //Console.WriteLine("to check if you have permission to Delete or not and add if not.");
+            //if ((YourPermission & permissions.Delete) == permissions.Delete)
+            //{
+            //    Console.WriteLine("permission Delete is already existed");
+            //    Console.WriteLine(YourPermission);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("permission Delete is not existed, I'll added");
+            //    YourPermission = YourPermission ^ permissions.Delete;
+            //    Console.WriteLine(YourPermission);
+
+
+            //}
+
+            //Console.WriteLine("if write is existed no nothing if not add it");
+
+            //YourPermission = YourPermission ^ permissions.Write;
+            //Console.WriteLine(YourPermission);
 
 
             #endregion
@@ -69,7 +98,7 @@ namespace assignment
             #region Q4
 
 
-            #endregion 
+            #endregion
             #region Q5
 
 
