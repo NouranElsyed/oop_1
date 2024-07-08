@@ -111,6 +111,7 @@ namespace assignment
             //else { Console.WriteLine("color is not a primary color"); }
 
             #endregion
+
             #region Q5
           //  Point p1, p2;
           //  Console.WriteLine("Enter x of point 1:");
