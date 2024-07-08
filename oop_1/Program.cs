@@ -100,7 +100,7 @@
             //    Console.WriteLine("Delete is Existed ");
             //}
             //else {
-            
+
             //    Console.WriteLine("Delete is not Existed ");
             //    employee.permissions = employee.permissions ^ permissions.Read;
 
@@ -116,6 +116,26 @@
 
             #endregion
 
+            #endregion
+            #region struct 
+
+            point01 p1;
+            //p1.x = 10;
+            //p1.y = 20;
+            //Console.WriteLine($"x : {p1.x}");
+            //Console.WriteLine($"y : {p1.y}");
+            //p1 = new point01(50);
+            //Console.WriteLine($"x : {p1.x}");// 50
+            //Console.WriteLine($"y : {p1.y}");//50
+            p1 = new point01(1,2);
+            Console.WriteLine($"x : {p1.x}");// 1
+            Console.WriteLine($"y : {p1.y}");// 2
+            Console.WriteLine(p1);//oop_1.point01
+            Console.WriteLine(p1.ToString());//oop_1.point01
+
+
+            Console.WriteLine(p1);//(1,2)
+            Console.WriteLine(p1.ToString());// (1, 2)
             #endregion
 
         }
