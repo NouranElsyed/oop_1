@@ -17,6 +17,11 @@ namespace assignment
     public enum permissions { 
     Delete =1 , Excute = 2 , Read =4 , Write = 8
     }
+
+    public enum Colors 
+    {
+    Red, Green, Blue    
+    }
     internal class Program
     {
 
@@ -96,7 +101,10 @@ namespace assignment
             #endregion
 
             #region Q4
-
+            bool Result = Enum.TryParse<Colors>(Console.ReadLine(),true,out Colors x);
+            if (Result)
+            { Console.WriteLine("color is a primary color"); }
+            else { Console.WriteLine("color is not a primary color"); }
 
             #endregion
             #region Q5
