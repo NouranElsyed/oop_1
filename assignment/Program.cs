@@ -24,6 +24,10 @@ namespace assignment
     }
     internal class Program
     {
+         static double distance (int x1 , int y1 , int x2 , int y2) {
+          double result =  Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            return result;
+        }
 
         static void Main(string[] args)
         {
@@ -101,14 +105,31 @@ namespace assignment
             #endregion
 
             #region Q4
-            bool Result = Enum.TryParse<Colors>(Console.ReadLine(),true,out Colors x);
-            if (Result)
-            { Console.WriteLine("color is a primary color"); }
-            else { Console.WriteLine("color is not a primary color"); }
+            //bool Result = Enum.TryParse<Colors>(Console.ReadLine(),true,out Colors x);
+            //if (Result)
+            //{ Console.WriteLine("color is a primary color"); }
+            //else { Console.WriteLine("color is not a primary color"); }
 
             #endregion
             #region Q5
+          //  Point p1, p2;
+          //  Console.WriteLine("Enter x of point 1:");
+          //  int.TryParse(Console.ReadLine(),out int x1);
+          //  Console.WriteLine("Enter y of point 1:");
+          //  int.TryParse(Console.ReadLine(), out int y1);
+          //  Console.WriteLine("Enter x of point 2:");
+          //  int.TryParse(Console.ReadLine(), out int x2);
+          //  Console.WriteLine("Enter y of point 2:");
+          //  int.TryParse(Console.ReadLine(), out int y2);
 
+          //  p1 = new Point(x1, y1);
+          //  p2 = new Point(x2,y2);
+
+
+          //double res =  distance(p1.x, p1.y, p2.x, p2.y);
+          //  Console.WriteLine("Distance between them: ");
+
+          //  Console.WriteLine(res);
 
             #endregion
         }
